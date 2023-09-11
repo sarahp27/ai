@@ -1,23 +1,32 @@
 import logo from './logo.svg';
 import './App.css';
+import Card from './Components/Card'
+import Grid from '@mui/material/Grid';
+import { Component } from 'react';
+import NavBar from './Components/NavBar';
+import Search from './Components/Search';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <Grid container spacing={2}>
+
+      <Grid item xs={2}> 
+       
+      </Grid>
+     
+      {/* Card occupying 8 columns on the right */}
+
+      
+      <Grid item xs={10}>
+        <Card />
+        < Search/>
+      </Grid>
+
+
+      </Grid>
+
     </div>
   );
 }
