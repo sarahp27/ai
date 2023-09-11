@@ -18,7 +18,8 @@ export default function ExampleTextareaComment() {
   const [fontWeight, setFontWeight] = React.useState('normal');
   const [anchorEl, setAnchorEl] = React.useState(null);
   return (
-    <FormControl >
+    <FormControl sx={{display:'flex',alignContent:'flex-end'
+    }}>
       {/* <FormLabel>Your comment</FormLabel> */}
       <Textarea
         placeholder="Send a message here"
@@ -33,6 +34,8 @@ export default function ExampleTextareaComment() {
               borderTop: '1px solid',
               borderColor: 'divider',
               flex: 'auto',
+              
+              
             
            
             }}

@@ -17,7 +17,7 @@ export default function BasicCard() {
   return (
   
  
-        <Card sx={{ minWidth: 275, borderRadius: '20px', margin:'10px' }}>
+        <Card sx={{ minWidth: 275, borderRadius: '20px', margin:'10px' , backgroundColor:'grey'}}>
           <CardContent>
             <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
               Word of the Day
